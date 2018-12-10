@@ -1,0 +1,22 @@
+#
+# Requirements used for development of this project
+#
+
+# install dependencies used for build, test etc. only
+jsonschema == 2.6.0
+mock == 2.0.0
+mypy == 0.650
+pip == 18.1
+pylint == 2.1.1
+pytest == 4.0.0
+pytest-cov == 2.6.0
+pytest-runner == 4.2
+setuptools == 40.6.2
+Sphinx == 1.8.2
+sphinx-rtd-theme == 0.4.2
+testfixtures == 6.3.0
+wheel == 0.32.2
+
+# install dependencies needed at install/runtime
+-r requirements.txt
+

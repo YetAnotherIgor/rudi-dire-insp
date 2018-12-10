@@ -1,0 +1,48 @@
+{
+  "title": "JSON schema for each JSON object per line in the cli output stream",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "hashes": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "md5": {
+          "type": "string"
+        },
+        "sha1": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        },
+        "sha384": {
+          "type": "string"
+        },
+        "sha512": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "md5",
+        "sha1",
+        "sha256",
+        "sha384",
+        "sha512"
+      ]
+    },
+    "relative_path": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "size": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "hashes"
+  ]
+}
